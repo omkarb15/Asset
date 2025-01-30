@@ -14,6 +14,8 @@ import { PostComponent } from './Api/post/post.component';
 import { PutComponent } from './Api/put/put.component';
 import { DeleteComponent } from './Api/delete/delete.component';
 import { CoustomerComponent } from './Api/coustomer/coustomer.component';
+import { LifecycleComponent } from './components/lifecycle/lifecycle.component';
+import { OperatorsComponent } from './components/operators/operators.component';
 
 export const routes: Routes = [
     {
@@ -82,5 +84,18 @@ export const routes: Routes = [
     {
         path:'customer',
         component:CoustomerComponent
+    },
+    {
+        path:'LifecycleEvents',
+        component:LifecycleComponent
+    
+    },
+    {
+        path:'Ng-for',
+        component:NgForComponent
+    },
+    {
+        path:'Operators',
+        component:OperatorsComponent
     }
 ];
