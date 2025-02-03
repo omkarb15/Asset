@@ -1,0 +1,12 @@
+<div class="row">
+    <div  *ngFor="let user of users" [ngClass]="{'active':user.isActive, 'inActive': !user.isActive}">
+        {{user.name}}
+    </div>
+</div>
+<p [ngStyle]="{'color': temperature>30 ? 'red ' :'blue' }">
+    current temperature-- {{temperature}}C
+</p>
+<div>
+    <input type="text" [(ngModel)]="name" placeholder="enter your Name">
+    <button [disabled]="!name">submit</button>
+</div>
